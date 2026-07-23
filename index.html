@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Andrea Fiscalaura Marcellina | Ethereal Motion Portfolio</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-container": "#ffeae2",
+                "on-secondary-fixed-variant": "#4e378d",
+                "outline-variant": "#564149",
+                "surface": "#1a0b2e",
+                "primary": "#ffb0d0",
+                "on-primary-container": "#ffe9ef",
+                "on-error": "#690005",
+                "secondary": "#cebdff",
+                "background": "#1a0b2e",
+                "secondary-fixed": "#e8ddff",
+                "on-background": "#eddcff",
+                "primary-fixed-dim": "#ffb0d0",
+                "tertiary": "#ffb694",
+                "on-surface": "#eddcff",
+                "on-secondary-container": "#c1acff",
+                "surface-container-high": "#322346",
+                "inverse-on-surface": "#38294d",
+                "surface-dim": "#1a0b2e",
+                "on-tertiary-fixed-variant": "#77320b",
+                "on-primary": "#63003c",
+                "surface-container-low": "#231437",
+                "secondary-container": "#50398f",
+                "surface-variant": "#3d2e52",
+                "on-secondary": "#371d75",
+                "surface-tint": "#ffb0d0",
+                "on-tertiary-fixed": "#351000",
+                "outline": "#a48a93",
+                "surface-container": "#27183b",
+                "on-primary-fixed-variant": "#8b0157",
+                "primary-fixed": "#ffd8e6",
+                "surface-bright": "#413257",
+                "tertiary-fixed-dim": "#ffb694",
+                "on-error-container": "#ffdad6",
+                "surface-container-lowest": "#150629",
+                "on-surface-variant": "#dcbfc8",
+                "error-container": "#93000a",
+                "secondary-fixed-dim": "#cebdff",
+                "surface-container-highest": "#3d2e52",
+                "on-secondary-fixed": "#21005e",
+                "tertiary-fixed": "#ffdbcc",
+                "primary-container": "#bd367e",
+                "tertiary-container": "#a6562d",
+                "inverse-primary": "#ab2670",
+                "on-tertiary": "#571f00",
+                "error": "#ffb4ab",
+                "inverse-surface": "#eddcff",
+                "on-primary-fixed": "#3d0024"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "container-max": "1280px",
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "margin-mobile": "20px",
+                "unit": "8px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Playfair Display"],
+                "headline-lg": ["Playfair Display"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Plus Jakarta Sans"],
+                "label-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #1a0b2e;
+    color: #eddcff;
+    overflow-x: hidden
+    }
+.glass-card {
+    background: rgba(26, 11, 46, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    }
+.grainy-texture {
+    position: relative
+    }
+.grainy-texture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBzk9Ew2zdOCDlcTYcpN0WUDgyBlUKZgvrVcOIXVLJTVT6OsjLsmKi-6p-gR2ykOgfqpezA_KLbvv4oEhY5ICtV-EDBwqMEEMbpTIKu-4lxCmzOtoRCY9QetZl_be0g4OkaQfyObl4Z4SThJ1iXDi071DR7M0l6qOHWkFKGmkaZibMGYSNPKfxY_24OBA8AzLLEoDamlF9EOccJZaAsSp4TZXJVEoNP0ZDjqHIdXeD1AeSH6WITQuCs);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 10
+    }
+.bloom-shadow {
+    box-shadow: 0 0 40px rgba(255, 176, 208, 0.15)
+    }
+.animate-float {
+    animation: float 6s ease-in-out infinite
+    }
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+        } 50% {
+        transform: translateY(-20px);
+        }
+    }
+.gradient-border-button {
+    position: relative;
+    background: transparent;
+    z-index: 1
+    }
+.gradient-border-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #ffb0d0, #cebdff);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none
+    }</style>
+</head>
+<body class="font-body-md text-body-md grainy-texture">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-gutter rounded-full mt-6 mx-auto w-fit max-w-[90%] px-8 py-4 bg-surface/70 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(255,176,208,0.2)]">
+<div class="font-headline-lg text-[24px] tracking-tighter text-primary">Andrea Fiscalaura Marcellina</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary transition-all duration-500 ease-in-out" href="#home">Home</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/80 hover:text-on-surface transition-all duration-500 ease-in-out" href="#about">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/80 hover:text-on-surface transition-all duration-500 ease-in-out" href="#dance">Dance</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/80 hover:text-on-surface transition-all duration-500 ease-in-out" href="#projects">Showcase</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/80 hover:text-on-surface transition-all duration-500 ease-in-out" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-sm text-label-sm hover:scale-105 active:scale-95 transition-transform uppercase tracking-widest">Hire Me</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-32 px-margin-mobile md:px-margin-desktop overflow-hidden" id="home">
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="Andrea's Vision" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7UulO3bcFANyWW4eEGjgyT0fozqcl0Tb-NAVBAAg8vSue7EidoZLQAhov-UVFl6exSMXKiKEbns_SbnuQk6TZYTgm6w8rimdluVO-0wRfh1TS0DE3gmiAt6ROE-OQ2TQgIYcSKSAKV_1rbXYWnO4GNAY7UJDqcyB-Tx3y5y-vbOnbm38AcRnA5u3_WXeWWezygs9lt7Hw0a4drENsnzHGYR3II_9WOmhyPRHK79f2suEsIPyW6xGszL7fWXZrMyBl0A"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl mx-auto">
+<h1 class="font-display-lg text-[48px] md:text-display-lg text-on-surface mb-4 leading-tight">
+<span class="block text-primary">Andrea Fiscalaura</span> 
+                    Marcellina
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 uppercase tracking-[0.2em]">
+                    Professional Dancer &amp; Web Enthusiast
+                </p>
+<div class="flex gap-6 justify-center">
+<button class="bg-gradient-to-r from-[#bd367e] to-[#50398f] text-on-primary-container px-10 py-4 rounded-full font-label-sm text-label-sm hover:bloom-shadow transition-all duration-300 transform hover:-translate-y-1">VIEW PERFORMANCE</button>
+<button class="gradient-border-button px-10 py-4 rounded-full font-label-sm text-label-sm text-primary hover:bg-white/5 transition-all">MY CODEBASE</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-primary opacity-60 animate-bounce">
+<span class="font-label-sm text-[10px] tracking-widest uppercase">Scroll to Explore</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- About Section (Asymmetric) -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<div class="rounded-xl overflow-hidden bloom-shadow transform -rotate-3 transition-transform hover:rotate-0 duration-700">
+<img class="w-full aspect-[4/5] object-cover" data-alt="A portrait of a young artistic woman with long dark hair, wearing a stylish minimalist outfit, standing in a studio with soft atmospheric purple and magenta neon lighting. The background is a mix of abstract shadows and soft glow, capturing a look of focus and creativity typical of a high school student who is also a professional artist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekECAilR-m6SL2XnMEV9U7me85Zxbe55LHm-FrQmxuAMK6pvPxZSSB_Ls6oOguxJ49D5Vuozbt7AalveYXEpPXKY5mZVMnZ2eAbTlVU26ZviNeaGc1DqL0dPlEJopGc4IV3guBk2xhVqHb-7HFrUd1ppBxUIV2D2ylYOUy9HltIzC52dW65ATCQDv6_xrug2aM3rM9Si_GG40CpdDyrJOjSEB4TR7gWZiMZfoFeDTw_Ek2YOF_50R"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 rounded-xl glass-card p-6 border border-primary/30 z-20 animate-float hidden md:block">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">auto_awesome</span>
+<p class="font-label-sm text-primary leading-relaxed">Infusing every project with the grace of a prima ballerina.</p>
+</div>
+</div>
+<div class="md:col-span-7 space-y-8">
+<div class="inline-block px-4 py-1 rounded-full border border-primary/20 text-primary font-label-sm uppercase tracking-widest bg-primary/5">The Genesis</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Artistry in Motion &amp; Logic</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        I am Andrea, a high school student currently balancing the rigorous demands of academia with the rhythmic discipline of professional dance. My world exists at the intersection of expressive stage performances and the clean, structured logic of modern web design.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                        Whether it is choreographed movements under stage lights or writing responsive CSS, my goal is to create experiences that resonate with elegance and efficiency.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Education Timeline (Rhythmic) -->
+<section class="py-32 bg-surface-container-lowest/50">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Academic Journey</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/30 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-12 text-center md:text-right">
+<div class="glass-card p-8 rounded-xl bloom-shadow inline-block w-full max-w-md">
+<span class="text-tertiary font-label-sm uppercase tracking-widest mb-2 block">Surabaya</span>
+<h3 class="font-headline-lg text-[24px] text-on-surface mb-2">SD Santa Angela</h3>
+<p class="text-on-surface-variant text-sm">Foundation of discipline and early artistic exploration.</p>
+</div>
+</div>
+<div class="relative z-10 w-4 h-4 rounded-full bg-primary ring-8 ring-primary/20"></div>
+<div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+<div class="relative z-10 w-4 h-4 rounded-full bg-secondary ring-8 ring-secondary/20"></div>
+<div class="md:w-1/2 md:pl-12 text-center md:text-left">
+<div class="glass-card p-8 rounded-xl bloom-shadow inline-block w-full max-w-md">
+<span class="text-secondary font-label-sm uppercase tracking-widest mb-2 block">Surabaya</span>
+<h3 class="font-headline-lg text-[24px] text-on-surface mb-2">SMPK Stella Maris</h3>
+<p class="text-on-surface-variant text-sm">Developing voice, rhythm, and analytical thinking.</p>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-12 text-center md:text-right">
+<div class="glass-card p-8 rounded-xl bloom-shadow border-primary/40 inline-block w-full max-w-md">
+<span class="text-primary font-label-sm uppercase tracking-widest mb-2 block">Yogyakarta</span>
+<h3 class="font-headline-lg text-[24px] text-on-surface mb-2">SMA Stella Duce I</h3>
+<p class="text-on-surface-variant text-sm">Current academic pinnacle and professional growth.</p>
+</div>
+</div>
+<div class="relative z-10 w-6 h-6 rounded-full bg-gradient-to-tr from-primary to-secondary ring-12 ring-primary/10"></div>
+<div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dancer Section -->
+<section class="py-32 overflow-hidden" id="dance">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="sticky top-40 space-y-8">
+<h2 class="font-display-lg text-[56px] text-on-surface leading-tight">The Stage is My <span class="italic text-primary">Canvas</span></h2>
+<p class="font-body-lg text-on-surface-variant">
+                            Professional dance has taught me the importance of precision, endurance, and the silent language of storytelling. Every performance is a unique interface between the artist and the audience.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm uppercase tracking-widest">Lead Soloist - National Theater</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm uppercase tracking-widest">Contemporary Fusion Award Winner</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm uppercase tracking-widest">Dance Instructor Fellow</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img class="rounded-xl w-full h-[300px] object-cover bloom-shadow" data-alt="A professional contemporary dancer in mid-air during a powerful jump, their body creating a fluid S-curve against a dark theatrical background. Soft magenta stage lighting highlights the dust particles in the air and the texture of their flowing costume. The image is captured with a high-end camera, emphasizing motion blur and high-contrast shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7uld9BTzVCreE3rVjX8dikRVy6gQyGI4cRmYMHG2uZM4692XX35cm7fHzGoxUhJPAhuPiQ2NuPV_B_02wtt9IpNnuAE4SKV5dVe51Dz1Af4B2b4yDBRdK4cRPwbJ1huXemGlccIqFUN1qwOD_a4P-vGcHmY9q6kbJo0G6H6295V3Dje9v_U7KuYtwmPvoKKChIJRwHfJdDA-AAIcNoYF1-1vogKb9AS9oxaefn57DzCRqYQELYvBD"/>
+<img class="rounded-xl w-full h-[450px] object-cover" data-alt="Close-up artistic shot of ballet dancer's hands gesturing gracefully, illuminated by a warm ambient glow. The background is a dreamy wash of deep purples and indigos with grainy film texture, reflecting a sophisticated, ethereal dance aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMrNhhmcpiecxgE6pmucVhF4AcAdbly9Yurmgy2K1gHdQe3KMhFQqomF260RE3Ux1SkxFGWcKEDzdnH0GYpx-xXN8Ky9e9MWjZ0yBFVcTC4rXrj6ZP-qIzcrRnand1gSmmSVPjiY2EZOmwqHWuU5S9nem3ur1_PLlAG2ruL46xsRycspEpvk5kbPifZADquzDwRxGqn7FPhJUrYSmeiWFSw-lihPh9786TBkQHFXAFV9lQ7Qyx1SIr"/>
+</div>
+<div class="space-y-4">
+<img class="rounded-xl w-full h-[450px] object-cover" data-alt="A dancer performing on a dark stage with a large projection of abstract geometric shapes behind them. The lighting is a mix of neon cyan and vibrant pink, reflecting on the stage floor. The style is modern and experimental, bridging the gap between classical dance and futuristic technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfchdKyClEuqbRV87fYmhO4_fxtTVekmTTC-yRghMnGZ_36nOp1oKYHlxyd9aVUhs4TTWff2pgvF5k5U-sOD-fPl9_su_RBJPRSjBL-8uxM8Fs4JalT3F2A5wsqls8t0UNSRd3HbyU5966F7XHZfccdij9FCtkCPzReBkp1_Zd1dQ0ap_TK1qaGh3G9Gk0H3oF0mtC7BFmrIkMBUlK0O-dfkNQIjsLprCOo6NzEGwX2iOBXR10BP0f"/>
+<img class="rounded-xl w-full h-[300px] object-cover bloom-shadow" data-alt="A dramatic black and white photograph of a dancer in a moment of stillness, back to the camera, looking towards a single spotlight. The lighting creates a sharp silhouette and highlights the powerful muscles and focused posture. Very high-end, artistic editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBPwVwD8JRE4Z81z-YwX20NVXhbd6LMPCGyFjmsi7Y1uVsKjMvjnEzGYIqrttPGE1D8VNGsnhZOcR5ecx84ceOH6y0zZ1DCRWSRP4q4kvD-F8Q-pdiiS39jwnz_h0MuD44iZxPuf_UPZCdbapO9-wETpnprNoEfwR1zkLgKP2TyB4RyChs7KwPQZLFKvYupolBKQegYXhCZoe-wmaNMUiSJ459tcxZK_5rb9f2e8jpCcFDrkWfvOyw"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hobbies Section (Bento Grid) -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-12">Beyond the Spotlight</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter h-[600px] md:h-[500px]">
+<div class="md:col-span-2 md:row-span-2 glass-card p-8 rounded-xl flex flex-col justify-end group overflow-hidden border-primary/20">
+<div class="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A top-down view of a serene infinity pool at night, with the water's surface reflecting distant neon lights from a city. The water ripples gently, creating a hypnotic, rhythmic pattern that matches the ethereal motion theme of the portfolio. Dark purples and deep blues dominate the color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC19t0-H0rpBt4c1FEC3_JMk3B1vBYdsRbmf2aSmeWI2n14-tb7SvhCS9mSfcLn5GR4s7z1T_9hB1157yVwNToKouWFSXZdZRuqmqj3WzMyZNt4ZG-69IjHcP0JlUZ3t2vcb6D1fWssaUCuMjkus8yObPtBv2DS5PZhNuvlCPGfjfNvOZNi2VzKOTS9XtqYgFjuShmdIhnBelHm-1QO1YEA-kE-ApLzo725MmO6gm7gdY_vWE2xzIk5"/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">pool</span>
+<h3 class="font-headline-lg text-[28px] mb-2">Swimming</h3>
+<p class="text-on-surface-variant font-body-md">Finding weightlessness and meditation in the water.</p>
+</div>
+</div>
+<div class="md:col-span-2 glass-card p-8 rounded-xl flex items-center gap-6 border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-4xl">travel_explore</span>
+<div>
+<h3 class="font-headline-lg text-[24px] mb-1">Exploring Cultures</h3>
+<p class="text-on-surface-variant text-sm">Traveling to find new rhythms and stories.</p>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col justify-center items-center border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-2">auto_stories</span>
+<h3 class="font-label-sm uppercase">Poetry</h3>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col justify-center items-center border-primary/20">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">music_note</span>
+<h3 class="font-label-sm uppercase">Vinyls</h3>
+</div>
+</div>
+</section>
+<!-- HTML & CSS Showcase (Carousel) -->
+<section class="py-32 bg-surface-container-high/30" id="projects">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Digital Choreography</h2>
+<p class="text-on-surface-variant font-body-md mt-2">Projects built with pure HTML, CSS, and a touch of magic.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant hover:border-primary transition-colors flex items-center justify-center" onclick="prevSlide()">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant hover:border-primary transition-colors flex items-center justify-center" onclick="nextSlide()">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative overflow-hidden">
+<div class="flex transition-transform duration-700 ease-in-out gap-8" id="carousel">
+<!-- Slide 1 -->
+<div class="min-w-full md:min-w-[calc(60%-16px)] glass-card p-6 rounded-xl flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2 aspect-video rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A screenshot of a sleek, dark-themed portfolio website featuring glassmorphic cards and a floating navigation bar. The design uses vibrant pink accents and elegant serif typography. The interface looks professional, modern, and highly responsive, showcasing advanced CSS layout techniques like CSS Grid and Flexbox." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZAZrRutd2v30vz4_99mUKRLBs-mutpu1fTlE5FTJcGWebUIOUIsuwkDrER8kAqakAfAo8lJYWpevGYR6FlA9F5pv9g-EJZhYxFs6Qwa9oAN38uRdQMUKTJ4okzDNI9rYZzis2KDhKST7I0x2ro9sRYjQvMWWS-nFKlJjPuO_HvQljiBzGqAVmRxcjTDn2_BmIwQ5m5p1Li8x5VKu9CB4OGCt5GuR--4yw_u63ECdpSVjHLC9BL"/>
+</div>
+<div class="md:w-1/2 space-y-4">
+<h3 class="font-headline-lg text-[24px] text-primary">Prism UI Kit</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    A lightweight CSS-only UI framework focused on glassmorphism and atmospheric depth. Developed for creative portfolios.
+                                </p>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">HTML5</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">Tailwind</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">Vanilla JS</span>
+</div>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-full md:min-w-[calc(60%-16px)] glass-card p-6 rounded-xl flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2 aspect-video rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A mockup of an interactive landing page for a dance studio. The page features a large parallax hero image of a dancer, with text that animates as the user scrolls. The color palette is a sophisticated mix of deep indigo and gold, representing luxury and performance art. The layout is asymmetrical and dynamic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWurACpu9YZWwEFIG7vYf8qdrxOk_rtdpV6FR5RTF7nkgpQAMTji36rxXyJKn-iKlJS3m0c3xN26zjkqHfjUu4xm2iVMLNCRVPu1hiSanYAyH60H2ItKKzgBkry5Nz4w5CIv0kdsu-HQmRx0sONWaWXP_6jsQaFpofVIN-ImmtglNP6_0W4DkXNvVjk27qjyCqSzAA1JxGdRyCP35tQzTQGIivhWOzv5g84PpFsIurEMakbbXHfXQ0"/>
+</div>
+<div class="md:w-1/2 space-y-4">
+<h3 class="font-headline-lg text-[24px] text-secondary">Rhythm Lab</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    An experimental single-page application exploring scroll-triggered animations and fluid layout transitions inspired by movement.
+                                </p>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">CSS Animation</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">SVG Filters</span>
+<span class="px-3 py-1 bg-surface-variant rounded-full text-[10px] uppercase font-bold text-on-surface-variant">A11y</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-3 mt-12" id="carousel-dots">
+<button class="w-12 h-1 bg-primary rounded-full"></button>
+<button class="w-4 h-1 bg-outline-variant rounded-full transition-all hover:bg-primary/50"></button>
+<button class="w-4 h-1 bg-outline-variant rounded-full transition-all hover:bg-primary/50"></button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contact">
+<div class="glass-card p-12 md:p-24 rounded-3xl bloom-shadow relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary/10 rounded-full blur-[100px]"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-display-lg text-[40px] md:text-[56px] text-on-surface mb-6">Let's Create <span class="text-primary italic">Together</span></h2>
+<p class="text-on-surface-variant text-body-lg mb-12">
+                            I am always open to artistic collaborations, performances, or web development projects that require a unique touch of motion.
+                        </p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="mailto:andrea@marcellina.art">
+<span class="w-12 h-12 rounded-full glass-card flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface transition-all">
+<span class="material-symbols-outlined">mail</span>
+</span>
+<span class="font-body-md">andrea@marcellina.art</span>
+</a>
+<div class="flex gap-6 mt-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-sm tracking-[0.2em]" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-sm tracking-[0.2em]" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors uppercase font-label-sm tracking-[0.2em]" href="#">Vimeo</a>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-sm uppercase tracking-widest text-on-surface-variant">Name</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-primary transition-colors" placeholder="Dancer or Developer?" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm uppercase tracking-widest text-on-surface-variant">Email</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-primary transition-colors" placeholder="your@email.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm uppercase tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-primary transition-colors" placeholder="Tell me about your vision..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-label-sm uppercase tracking-[0.3em] font-bold hover:bloom-shadow transform hover:-translate-y-1 transition-all">SEND SIGNAL</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 px-margin-desktop border-t border-outline-variant/30 bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto gap-12">
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface mb-2">Andrea</div>
+<p class="font-body-md text-on-surface-variant">Professional Dancer &amp; Web Enthusiast</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-8">
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Vimeo</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="font-label-sm text-on-surface-variant/50">© 2024 Andrea Fiscalaura Marcellina. Built with Ethereal Motion.</p>
+</div>
+</div>
+</footer>
+<script>
+        let currentSlide = 0;
+        const carousel = document.getElementById('carousel');
+        const dots = document.getElementById('carousel-dots').children;
+
+        function updateCarousel() {
+            const width = carousel.children[0].offsetWidth;
+            const gap = 32;
+            carousel.style.transform = `translateX(-${currentSlide * (width + gap)}px)`;
+            
+            // Update dots
+            Array.from(dots).forEach((dot, idx) => {
+                if (idx === currentSlide) {
+                    dot.classList.add('w-12', 'bg-primary');
+                    dot.classList.remove('w-4', 'bg-outline-variant');
+                } else {
+                    dot.classList.remove('w-12', 'bg-primary');
+                    dot.classList.add('w-4', 'bg-outline-variant');
+                }
+            });
+        }
+
+        function nextSlide() {
+            if (currentSlide < carousel.children.length - 1) {
+                currentSlide++;
+                updateCarousel();
+            } else {
+                currentSlide = 0;
+                updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateCarousel();
+            } else {
+                currentSlide = carousel.children.length - 1;
+                updateCarousel();
+            }
+        }
+
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
